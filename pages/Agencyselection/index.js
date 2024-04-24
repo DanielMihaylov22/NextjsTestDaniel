@@ -2,7 +2,7 @@ import { AgencySelection } from "../../sections/AgencySelection"
 
 const agencyProps = {
     image: { src: "/img/NoVideoBait.png", alt: "", width: 1000 / 2, height: 1680 / 2 },
-    title: "Managed agency selection.",
+    title: "Managed agency selection",
     description: "Strengthen your onboarding process",
     cards: [{
         title: "Brief",

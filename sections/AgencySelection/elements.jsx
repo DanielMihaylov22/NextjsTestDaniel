@@ -21,6 +21,8 @@ export const StyledCenteredTitle = styled((props) => (
   margin: 0;
   color: black;
   font-family: sans-serif;
+  white-space: nowrap;
+  font-size: 2.3rem;
 `;
 export const StyledSubTitle = styled((props) => (
   <SectionSubheading {...props} />
@@ -36,8 +38,11 @@ export const StyledContentContainer = styled(({ height, ...props }) => (
   align-items: center;
   justify-content: center;
   padding-top: 5rem;
-  flex-direction: row;
+  flex-direction: column;
   gap: 3rem;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
 `;
 export const StyledImageContainer = styled(({ ...props }) => (
   <div {...props} />
@@ -53,5 +58,7 @@ export const StyledCardContainer = styled(({ ...props }) => <div {...props} />)`
   flex-direction: column;
   display: flex;
   gap: 1rem;
-  width: 30%
+  @media (min-width: 1024px) {
+    width: 30%;
+  }
 `;
