@@ -9,6 +9,7 @@ import {
   StyledCTAContainer,
   StyledImageContainer,
 } from "./elements";
+import Link from "next/link";
 
 export const Hero = ({ image, title, description, ctaText, ...props }) => {
   return (
@@ -17,11 +18,19 @@ export const Hero = ({ image, title, description, ctaText, ...props }) => {
         <StyledTitle>{title}</StyledTitle>
         <StyledDescription>{description}</StyledDescription>
         <StyledCTAContainer>
-          <StyledGetStartedBtn>{ctaText}</StyledGetStartedBtn>
+          <Link href='/Agencyselection'>
+            <StyledGetStartedBtn>{ctaText}</StyledGetStartedBtn>
+          </Link>
         </StyledCTAContainer>
       </StyledTextContainer>
       <StyledImageContainer>
-        <Image layout="responsive" src={image.src} alt={image.alt} width={image.width} height={image.height} />
+        <Image
+          layout="responsive"
+          src={image.src}
+          alt={image.alt}
+          width={image.width}
+          height={image.height}
+        />
       </StyledImageContainer>
     </StyledContainer>
   );
