@@ -36,7 +36,7 @@ export const StyledContentContainer = styled(({ height, ...props }) => (
   align-items: center;
   justify-content: center;
   padding-top: 5rem;
-  flex-direction: column;
+  flex-direction: row;
   gap: 3rem;
 `;
 export const StyledImageContainer = styled(({ ...props }) => (
@@ -53,4 +53,5 @@ export const StyledCardContainer = styled(({ ...props }) => <div {...props} />)`
   flex-direction: column;
   display: flex;
   gap: 1rem;
+  width: 30%
 `;

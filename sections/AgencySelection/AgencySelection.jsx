@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { StyledAgencyContainer, StyledCenteredTitle, StyledContentContainer, StyledImageContainer, StyledSubTitle } from "./elements";
+import { StyledAgencyContainer, StyledCardContainer, StyledCenteredTitle, StyledContentContainer, StyledImageContainer, StyledSubTitle } from "./elements";
+import Card from "../../collections/Card/Card";
 
 export const AgencySelection = ({ image, title, description, cards }) => {
   return (
@@ -16,6 +17,11 @@ export const AgencySelection = ({ image, title, description, cards }) => {
           height={image.height}
         />
         </StyledImageContainer>
+        <StyledCardContainer>
+            {cards.map((item) => (
+                <Card {...item} />
+            ))}
+        </StyledCardContainer>
       </StyledContentContainer>
     </StyledAgencyContainer>
   );
