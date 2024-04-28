@@ -19,6 +19,7 @@ export const StyledCard = styled(({ ...props }) => <div {...props} />)`
   font-family: sans-serif;
   border-radius: 0.5rem;
   align-items: center;
+  border: 2px solid transparent;
   &:hover,
   &:focus {
     border: 2px solid #0a7cff;
